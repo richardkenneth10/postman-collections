@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Register",
 			"id": "0566b7b1-e6d5-4005-b65e-7b7a4aaf3c3d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
