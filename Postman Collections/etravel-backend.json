@@ -7,20 +7,21 @@
 	"item": [
 		{
 			"name": "Auth",
-			"item": [],
+			"item": [
+				{
+					"name": "Send OTP",
+					"id": "0566b7b1-e6d5-4005-b65e-7b7a4aaf3c3d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "195a2d40-bbb4-4bb7-931e-f01267994665"
-		},
-		{
-			"name": "Register",
-			"id": "0566b7b1-e6d5-4005-b65e-7b7a4aaf3c3d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	]
 }
