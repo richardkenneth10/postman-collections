@@ -72,7 +72,7 @@
 					"response": []
 				},
 				{
-					"name": "L",
+					"name": "Login with Google",
 					"id": "2a894753-f4be-4342-b58e-5e82284ad147",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
