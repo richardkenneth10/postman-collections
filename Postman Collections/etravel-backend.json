@@ -129,7 +129,14 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"url": "{{URL}}/api/v1/profile/me"
 					},
 					"response": []
 				},
