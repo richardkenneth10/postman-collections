@@ -270,7 +270,7 @@
 					"name": "Auth",
 					"item": [
 						{
-							"name": "egister Driver",
+							"name": "Register Driver",
 							"id": "9a355ee4-6e33-41ea-8c75-4ca7fe3bb5fe",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
