@@ -104,14 +104,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\": \"\"\r\n}",
+							"raw": "{\r\n    \"accessToken\": \"token\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{URL}}/api/v1/auth/login-with-google"
+						"url": "{{URL}}/api/v1/auth/login-with-facebook"
 					},
 					"response": []
 				}
