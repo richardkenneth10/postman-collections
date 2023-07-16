@@ -53,7 +53,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Log out",
 					"id": "6dee5c60-9b30-44e0-ad04-70c84759b971",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
