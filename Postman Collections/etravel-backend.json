@@ -122,7 +122,7 @@
 			"name": "Profile",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Get my profile",
 					"id": "265f019d-b9ca-4f97-878a-7f467f8cbc10",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
