@@ -225,7 +225,7 @@
 					"response": []
 				},
 				{
-					"name": "Upload Iage",
+					"name": "Upload Image",
 					"id": "b7c1c594-dc71-47f4-87db-820b8e0172a9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
