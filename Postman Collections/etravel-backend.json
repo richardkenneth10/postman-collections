@@ -82,7 +82,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\": \"\"\r\n}",
+							"raw": "{\r\n    \"accessToken\": \"token\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
