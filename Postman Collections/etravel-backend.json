@@ -134,7 +134,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Update my Profile",
 					"id": "a26bec87-500e-4157-97d1-bde72a124e98",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
