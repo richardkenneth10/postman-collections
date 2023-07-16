@@ -6,261 +6,267 @@
 	},
 	"item": [
 		{
-			"name": "Auth",
-			"item": [
-				{
-					"name": "Send OTP",
-					"id": "0566b7b1-e6d5-4005-b65e-7b7a4aaf3c3d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"phone\":\"+2349039367642\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/auth/send-otp"
-					},
-					"response": []
-				},
-				{
-					"name": "Verify Phone and Login",
-					"id": "22df6541-7286-46f6-bb43-ad85d51d6a2c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"205599\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/auth/verify-phone-and-login"
-					},
-					"response": []
-				},
-				{
-					"name": "Log out",
-					"id": "6dee5c60-9b30-44e0-ad04-70c84759b971",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{accessToken}}",
-								"type": "text"
-							}
-						],
-						"url": "{{URL}}/api/v1/auth/logout"
-					},
-					"response": []
-				},
-				{
-					"name": "Login with Google",
-					"id": "2a894753-f4be-4342-b58e-5e82284ad147",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\": \"token\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/auth/login-with-google"
-					},
-					"response": []
-				},
-				{
-					"name": "Login with Facebook",
-					"id": "53f9fef9-b3f8-4c88-9cbb-2be06540a217",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\": \"token\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/auth/login-with-facebook"
-					},
-					"response": []
-				}
-			],
-			"id": "195a2d40-bbb4-4bb7-931e-f01267994665"
-		},
-		{
-			"name": "Profile",
-			"item": [
-				{
-					"name": "Get my profile",
-					"id": "265f019d-b9ca-4f97-878a-7f467f8cbc10",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{accessToken}}",
-								"type": "text"
-							}
-						],
-						"url": "{{URL}}/api/v1/profile/me"
-					},
-					"response": []
-				},
-				{
-					"name": "Update my Profile",
-					"id": "a26bec87-500e-4157-97d1-bde72a124e98",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"firstName\": \"Richard\",\r\n    \"lastName\": \"Kenneth\",\r\n    \"email\": \"richie@gmail.com\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/profile/update-profile"
-					},
-					"response": []
-				},
-				{
-					"name": "Update my Profile from Google",
-					"id": "7c103206-5797-414b-97b8-e4f8fdfac3b0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\": \"accessToken\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/profile/update-profile-from-google"
-					},
-					"response": []
-				},
-				{
-					"name": "Update my Profile from Facebook",
-					"id": "b12d3277-531c-4f7e-97a7-06f9d6bac697",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{accessToken}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"accessToken\": \"accessToken\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{URL}}/api/v1/profile/update-profile-from-facebook"
-					},
-					"response": []
-				},
-				{
-					"name": "Upload Image",
-					"id": "b7c1c594-dc71-47f4-87db-820b8e0172a9",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				}
-			],
-			"id": "9b665482-f616-4b5a-9a0a-abf6407cf2a1"
-		},
-		{
-			"name": "Token",
-			"item": [
-				{
-					"name": "Refresh Access Token",
-					"id": "c39b33af-6340-4064-863f-eac0164990a4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				}
-			],
-			"id": "fc1fb3c1-77c3-45f0-86c1-7d5c18e43352"
-		},
-		{
 			"name": "User",
-			"item": [],
+			"item": [
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Get my profile",
+							"id": "265f019d-b9ca-4f97-878a-7f467f8cbc10",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": "{{URL}}/api/v1/profile/me"
+							},
+							"response": []
+						},
+						{
+							"name": "Update my Profile",
+							"id": "a26bec87-500e-4157-97d1-bde72a124e98",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Richard\",\r\n    \"lastName\": \"Kenneth\",\r\n    \"email\": \"richie@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/profile/update-profile"
+							},
+							"response": []
+						},
+						{
+							"name": "Update my Profile from Google",
+							"id": "7c103206-5797-414b-97b8-e4f8fdfac3b0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accessToken\": \"accessToken\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/profile/update-profile-from-google"
+							},
+							"response": []
+						},
+						{
+							"name": "Update my Profile from Facebook",
+							"id": "b12d3277-531c-4f7e-97a7-06f9d6bac697",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accessToken\": \"accessToken\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/profile/update-profile-from-facebook"
+							},
+							"response": []
+						},
+						{
+							"name": "Upload Image",
+							"id": "b7c1c594-dc71-47f4-87db-820b8e0172a9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "9b665482-f616-4b5a-9a0a-abf6407cf2a1"
+				},
+				{
+					"name": "Token",
+					"item": [
+						{
+							"name": "Refresh Access Token",
+							"id": "c39b33af-6340-4064-863f-eac0164990a4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "fc1fb3c1-77c3-45f0-86c1-7d5c18e43352"
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Send OTP",
+							"id": "0566b7b1-e6d5-4005-b65e-7b7a4aaf3c3d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\":\"+2349039367642\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/send-otp"
+							},
+							"response": []
+						},
+						{
+							"name": "Verify Phone and Login",
+							"id": "22df6541-7286-46f6-bb43-ad85d51d6a2c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"205599\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/verify-phone-and-login"
+							},
+							"response": []
+						},
+						{
+							"name": "Log out",
+							"id": "6dee5c60-9b30-44e0-ad04-70c84759b971",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": "{{URL}}/api/v1/auth/logout"
+							},
+							"response": []
+						},
+						{
+							"name": "Login with Google",
+							"id": "2a894753-f4be-4342-b58e-5e82284ad147",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accessToken\": \"token\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/login-with-google"
+							},
+							"response": []
+						},
+						{
+							"name": "Login with Facebook",
+							"id": "53f9fef9-b3f8-4c88-9cbb-2be06540a217",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"accessToken\": \"token\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/login-with-facebook"
+							},
+							"response": []
+						}
+					],
+					"id": "195a2d40-bbb4-4bb7-931e-f01267994665"
+				}
+			],
 			"id": "106b7167-ab8b-4216-a6b9-5870dfde720d"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "8c62edd4-9cf1-4f6a-88e2-6100e6362236"
 		}
 	]
 }
