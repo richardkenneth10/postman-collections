@@ -31,7 +31,7 @@
 					"response": []
 				},
 				{
-					"name": "V",
+					"name": "Verify Phone and Login",
 					"id": "22df6541-7286-46f6-bb43-ad85d51d6a2c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
