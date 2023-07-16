@@ -213,14 +213,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\": \"Richard\r\n    \"\r\n}",
+							"raw": "{\r\n    \"accessToken\": \"accessToken\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{URL}}/api/v1/profile/update-profile"
+						"url": "{{URL}}/api/v1/profile/update-profile-from-facebook"
 					},
 					"response": []
 				}
