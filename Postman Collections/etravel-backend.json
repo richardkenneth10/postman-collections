@@ -241,7 +241,20 @@
 		},
 		{
 			"name": "Token",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "c39b33af-6340-4064-863f-eac0164990a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "fc1fb3c1-77c3-45f0-86c1-7d5c18e43352"
 		}
 	]
