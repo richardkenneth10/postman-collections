@@ -167,6 +167,34 @@
 						"url": "{{URL}}/api/v1/profile/update-profile"
 					},
 					"response": []
+				},
+				{
+					"name": "Update my Profile from Google",
+					"id": "7c103206-5797-414b-97b8-e4f8fdfac3b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Richard\r\n    \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/api/v1/profile/update-profile"
+					},
+					"response": []
 				}
 			],
 			"id": "9b665482-f616-4b5a-9a0a-abf6407cf2a1"
