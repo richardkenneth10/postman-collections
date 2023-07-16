@@ -195,6 +195,34 @@
 						"url": "{{URL}}/api/v1/profile/update-profile"
 					},
 					"response": []
+				},
+				{
+					"name": "Update my Profile from Facebook",
+					"id": "b12d3277-531c-4f7e-97a7-06f9d6bac697",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{accessToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Richard\r\n    \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/api/v1/profile/update-profile"
+					},
+					"response": []
 				}
 			],
 			"id": "9b665482-f616-4b5a-9a0a-abf6407cf2a1"
