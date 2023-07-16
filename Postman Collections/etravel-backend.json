@@ -157,7 +157,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\": \"Richard\r\n    \"\r\n}",
+							"raw": "{\r\n    \"firstName\": \"Richard\",\r\n    \"lastName\": \"Kenneth\",\r\n    \"email\": \"richie@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
