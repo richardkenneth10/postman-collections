@@ -92,6 +92,28 @@
 						"url": "{{URL}}/api/v1/auth/login-with-google"
 					},
 					"response": []
+				},
+				{
+					"name": "Login with Facebook",
+					"id": "53f9fef9-b3f8-4c88-9cbb-2be06540a217",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accessToken\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/api/v1/auth/login-with-google"
+					},
+					"response": []
 				}
 			],
 			"id": "195a2d40-bbb4-4bb7-931e-f01267994665"
