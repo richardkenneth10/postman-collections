@@ -268,7 +268,20 @@
 			"item": [
 				{
 					"name": "Auth",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "9a355ee4-6e33-41ea-8c75-4ca7fe3bb5fe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "03fb83ba-b4b7-4e1b-b766-8e309bd8491d"
 				}
 			],
