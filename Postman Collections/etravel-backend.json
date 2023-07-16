@@ -51,6 +51,18 @@
 						"url": "{{URL}}/api/v1/auth/verify-phone-and-login"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "6dee5c60-9b30-44e0-ad04-70c84759b971",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "195a2d40-bbb4-4bb7-931e-f01267994665"
