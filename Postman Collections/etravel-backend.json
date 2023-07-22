@@ -466,34 +466,6 @@
 						}
 					],
 					"id": "ade0f44e-9ea3-41d5-959d-d50be73a53b7"
-				},
-				{
-					"name": "Token",
-					"item": [
-						{
-							"name": "Refresh Driver's Access Token",
-							"id": "33be6b0d-27eb-43d3-8962-095dd6d37e79",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZpcnN0X25hbWUiOiJSaWNoYXJkIiwibGFzdF9uYW1lIjoiS2VubmV0aCIsInBob25lIjoiKzIzNDkwMzkzNjc2NDIiLCJlbWFpbCI6InJpY2hpZUBnbWFpbC5jb20iLCJpbWFnZV91cmwiOm51bGwsInVzZXJJZCI6Mn0sInJlZnJlc2hUb2tlbiI6IjRlMzM5OWY4NWY5MWYwOTVkZmY0OGIyZTkyNGJjZjAxYzc5MGUyZmQyNjgyNjcwMWU0MWQ0OGE1ZjJjNGZhZGRiNzA5ODUzZWUxZjEzM2NhIiwiaWF0IjoxNjg5NTIzMjAwfQ.uJC5FQXJ9nPEsk4ZjN1RS2rMrzfVufCGcN4OhCoi2u8\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{URL}}/api/v1/token/refresh"
-							},
-							"response": []
-						}
-					],
-					"id": "d93a691d-5e2e-4e04-9102-03f5aab6e201"
 				}
 			],
 			"id": "8c62edd4-9cf1-4f6a-88e2-6100e6362236"
