@@ -352,7 +352,32 @@
 				},
 				{
 					"name": "Profile",
-					"item": [],
+					"item": [
+						{
+							"name": "Get my Driver's Profile",
+							"id": "35069e06-33ac-44f2-9303-83c649d8151a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Update my Driver's Profile",
+							"id": "c9294037-ec0f-4ddf-92fd-43c44796c579",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "ade0f44e-9ea3-41d5-959d-d50be73a53b7"
 				}
 			],
