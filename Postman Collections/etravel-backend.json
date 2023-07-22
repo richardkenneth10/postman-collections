@@ -320,8 +320,18 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"richie@gmail.com\",\r\n    \"password\": \"11111111\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/driver-login"
 							},
 							"response": []
 						},
@@ -339,6 +349,24 @@
 						}
 					],
 					"id": "03fb83ba-b4b7-4e1b-b766-8e309bd8491d"
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "35069e06-33ac-44f2-9303-83c649d8151a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "ade0f44e-9ea3-41d5-959d-d50be73a53b7"
 				}
 			],
 			"id": "8c62edd4-9cf1-4f6a-88e2-6100e6362236"
