@@ -312,6 +312,18 @@
 								"url": "{{URL}}/api/v1/auth/verify-driver-email"
 							},
 							"response": []
+						},
+						{
+							"name": "Driver Login",
+							"id": "3a869d83-c466-4b53-9dca-b6371088a66f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "03fb83ba-b4b7-4e1b-b766-8e309bd8491d"
