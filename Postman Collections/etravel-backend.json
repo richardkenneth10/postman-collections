@@ -379,8 +379,24 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Rich\",\r\n    \"lastName\": \"Driver\",\r\n    \"driverLicense\": \"license\",\r\n    \"licenseImageUrl\": \"url\",\r\n    \"profilePhotoImageUrl\": \"ppurl\",\r\n    \"carExtPhotoImageUrl\": \"ceurl\",\r\n    \"carIntPhotoImageUrl\": \"ciurl\",\r\n    \"billingType\": \"COMPANY\",\r\n    \"address\": \"ad\",\r\n    \"companyName\": \"cn\",\r\n    \"companyRegistrationCode\": \"crc\",\r\n    \"bankAccountHolderName\": \"bahn\",\r\n    \"bankAccountNumber\": \"ban\",\r\n    \"bankName\": \"bn\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/profile/update-driver-profile"
 							},
 							"response": []
 						}
