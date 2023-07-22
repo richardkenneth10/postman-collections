@@ -505,8 +505,24 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"model\": \"Lexus\",\r\n    \"year\": 2022,\r\n    \"licensePlate\": \"A7BHJ3-ABJ\",\r\n    \"color\": \"Blue\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/vehicle/add"
 							},
 							"response": []
 						}
