@@ -290,6 +290,28 @@
 								"url": "{{URL}}/api/v1/auth/register-driver"
 							},
 							"response": []
+						},
+						{
+							"name": "Verify Driver Email",
+							"id": "f201e4b8-41f5-42cf-b0e1-56b4abf8b4fb",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"richie@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/verify-driver-email"
+							},
+							"response": []
 						}
 					],
 					"id": "03fb83ba-b4b7-4e1b-b766-8e309bd8491d"
