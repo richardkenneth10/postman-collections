@@ -354,7 +354,7 @@
 					"name": "Profile",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Get my Driver's Profile",
 							"id": "35069e06-33ac-44f2-9303-83c649d8151a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
