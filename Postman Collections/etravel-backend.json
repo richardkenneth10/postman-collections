@@ -121,8 +121,15 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"url": "{{URL}}/api/v1/profile/upload-image"
 							},
 							"response": []
 						}
@@ -193,7 +200,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"205599\"\r\n}",
+									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"204398\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -420,6 +427,18 @@
 						{
 							"name": "Verify and Update Driver's Phone",
 							"id": "39f9ef09-b588-45bb-8f52-795ea017bd7f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "ed990a56-c09b-4ed0-8f7c-47bb871b4a45",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
