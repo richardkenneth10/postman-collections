@@ -399,6 +399,18 @@
 								"url": "{{URL}}/api/v1/profile/update-driver-profile"
 							},
 							"response": []
+						},
+						{
+							"name": "Verify and Update Driver's Phone",
+							"id": "39f9ef09-b588-45bb-8f52-795ea017bd7f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "ade0f44e-9ea3-41d5-959d-d50be73a53b7"
