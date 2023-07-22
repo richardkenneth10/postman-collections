@@ -302,7 +302,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"email\": \"richie@gmail.com\"\r\n}",
+									"raw": "{\r\n    \"email\": \"richie@gmail.com\",\r\n    \"token\": \"token\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
