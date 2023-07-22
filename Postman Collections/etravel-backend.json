@@ -200,7 +200,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"205599\"\r\n}",
+									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"204398\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
