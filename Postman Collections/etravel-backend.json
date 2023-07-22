@@ -121,15 +121,8 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "{{accessToken}}",
-										"type": "text"
-									}
-								],
-								"url": "{{URL}}/api/v1/profile/upload-image"
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
@@ -146,18 +139,8 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImZpcnN0X25hbWUiOiJSaWNoYXJkIiwibGFzdF9uYW1lIjoiS2VubmV0aCIsInBob25lIjoiKzIzNDkwMzkzNjc2NDIiLCJlbWFpbCI6InJpY2hpZUBnbWFpbC5jb20iLCJpbWFnZV91cmwiOm51bGwsInVzZXJJZCI6Mn0sInJlZnJlc2hUb2tlbiI6IjRlMzM5OWY4NWY5MWYwOTVkZmY0OGIyZTkyNGJjZjAxYzc5MGUyZmQyNjgyNjcwMWU0MWQ0OGE1ZjJjNGZhZGRiNzA5ODUzZWUxZjEzM2NhIiwiaWF0IjoxNjg5NTIzMjAwfQ.uJC5FQXJ9nPEsk4ZjN1RS2rMrzfVufCGcN4OhCoi2u8\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{URL}}/api/v1/token/refresh"
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
@@ -200,7 +183,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"204398\"\r\n}",
+									"raw": "{\r\n    \"phone\": \"+2349039367642\",\r\n    \"otp\": \"205599\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -319,7 +302,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"email\": \"richie@gmail.com\",\r\n    \"token\": \"token\"\r\n}",
+									"raw": "{\r\n    \"email\": \"richie@gmail.com\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -359,15 +342,8 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "{{accessToken}}",
-										"type": "text"
-									}
-								],
-								"url": "{{URL}}/api/v1/auth/driver-logout"
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
@@ -425,20 +401,8 @@
 							"response": []
 						},
 						{
-							"name": "Verify and Update Driver's Phone",
+							"name": "New Request",
 							"id": "39f9ef09-b588-45bb-8f52-795ea017bd7f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Send Driver OTP",
-							"id": "ed990a56-c09b-4ed0-8f7c-47bb871b4a45",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
