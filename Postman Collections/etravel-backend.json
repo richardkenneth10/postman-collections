@@ -471,7 +471,7 @@
 					"name": "Token",
 					"item": [
 						{
-							"name": "Refresh Access Token",
+							"name": "Refresh Driver's Access Token",
 							"id": "33be6b0d-27eb-43d3-8962-095dd6d37e79",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
