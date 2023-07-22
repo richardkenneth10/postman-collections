@@ -292,7 +292,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Verify Driver Email",
 							"id": "f201e4b8-41f5-42cf-b0e1-56b4abf8b4fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
