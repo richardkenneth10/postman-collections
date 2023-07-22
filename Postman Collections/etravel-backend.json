@@ -326,7 +326,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Driver Logout",
 							"id": "546fe5cb-0b24-4dbe-ace8-bea6a98be985",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
