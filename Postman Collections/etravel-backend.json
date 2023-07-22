@@ -497,7 +497,20 @@
 				},
 				{
 					"name": "Vehicle",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "376fdca2-4b22-490c-aead-5cef9e113c85",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "bd6cf201-2264-4ac4-b3f2-68383ee8a246"
 				}
 			],
