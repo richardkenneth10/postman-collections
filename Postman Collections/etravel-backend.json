@@ -437,14 +437,30 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Send Driver OTP",
 							"id": "ed990a56-c09b-4ed0-8f7c-47bb871b4a45",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{accessToken}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phone\": \"+2349039367642\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}/api/v1/auth/send-driver-otp"
 							},
 							"response": []
 						}
