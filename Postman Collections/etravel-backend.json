@@ -499,7 +499,7 @@
 					"name": "Vehicle",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "Add Vehicle",
 							"id": "376fdca2-4b22-490c-aead-5cef9e113c85",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
