@@ -437,7 +437,7 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
+							"name": "Send Driver OTP",
 							"id": "ed990a56-c09b-4ed0-8f7c-47bb871b4a45",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
